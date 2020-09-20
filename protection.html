@@ -420,9 +420,18 @@ i {
           <p id="u1084-5">&nbsp;</p>
           <p id="u1084-7"><span id="u1084-6">All staff can play an active role in ensuring that children with disabilities are included in child protection interventions within humanitarian contexts!</span></p>
           <p id="u1084-8">&nbsp;</p>
-          <p id="u1084-14"><span id="u1084-9"><span class="actAsDiv normal_text" id="u150018">
-                <!-- content --><span class="actAsDiv clip_frame" id="u149992" data-sizePolicy="fixed" data-pintopage="page_fixedLeft">
-                  <!-- image --><img class="block temp_no_img_src" id="u149992_img" data-orig-src="images/screen%20shot%202017-06-05%20at%2050024%20pm210x298.jpg?crc=85486924" alt="" width="210" height="298" src="images/blank.gif?crc=4208392903" /></span></span></span>Including Children with Disabilities in Humanitarian Action: Child Protection [<a class="nonblock" href="downloads/UNICEF_Child_Protection_English.pdf">English PDF</a>]</p>
+          <p id="u1084-14">
+            <span id="u1084-9"
+            ><span class="actAsDiv normal_text" id="u150018">
+                <!-- content -->
+                <span class="actAsDiv clip_frame" id="u149992" data-sizePolicy="fixed" data-pintopage="page_fixedLeft">
+                  <!-- image -->
+                  <img class="block temp_no_img_src" id="u149992_img" data-orig-src="images/screen%20shot%202017-06-05%20at%2050024%20pm210x298.jpg?crc=85486924" alt="Cover image of the general guidance document" width="210" height="298" src="images/blank.gif?crc=4208392903" />
+                </span>
+              </span>
+            </span>
+          </p>
+          <p id="u1084-15">Including Children with Disabilities in Humanitarian Action: Child Protection [<a class="nonblock" href="downloads/UNICEF_Child_Protection_English.pdf">English PDF</a>]</p>
           <p id="u1084-15">&nbsp;</p>
           <p id="u1084-20">Including Children with Disabilities in Humanitarian Action: Child Protection [<a class="nonblock" href="downloads/UNICEF_Child_Protection_French.pdf">French PDF</a>]</p>
           <p id="u1084-20"><span style="font-style: italic">Inclure les ensfants handicapés dans l'action humanitaire; Protection de l’enfance</span></p>
@@ -1865,8 +1874,11 @@ i {
         },
         g = function(g) {
           for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
-            if ("text/css" == f[h].type) { var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/); if (!i || !i[1] || !i[2]) break;
-              b[i[1]] = i[2] } f = document.createElement("div");
+            if ("text/css" == f[h].type) {
+              var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
+              if (!i || !i[1] || !i[2]) break;
+              b[i[1]] = i[2]
+            } f = document.createElement("div");
           f.className = "version";
           f.style.cssText = "display:none; width:1px; height:1px;";
           document.getElementsByTagName("body")[0].appendChild(f);
@@ -1883,11 +1895,14 @@ i {
                 k = a(c(f, "color"));
                 l = a(c(f, "backgroundColor"));
                 k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
-                f.className = "version"; break;
+                f.className = "version";
+                break;
               case "js":
-                h++; break;
+                h++;
+                break;
               default:
-                throw Error("Unsupported file type: " + l); }
+                throw Error("Unsupported file type: " + l);
+            }
           }
           d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
           f.parentNode.removeChild(f);
